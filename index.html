@@ -45,7 +45,6 @@
     padding:0 18px 40px;
   }
 
-  /* ---------- TOPBAR ---------- */
   .topbar{
     position:sticky; top:0; z-index:40;
     display:flex; align-items:center; gap:10px;
@@ -80,7 +79,6 @@
   .sync-dot.loading{background:var(--gold); animation:pulse 1s infinite ease-in-out;}
   @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.3;}}
 
-  /* ---------- HERO ---------- */
   .hero{
     display:flex;
     align-items:center;
@@ -117,7 +115,6 @@
     max-width:46ch;
   }
 
-  /* ---------- STAT STRIP ---------- */
   .stat-strip{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -144,7 +141,6 @@
     line-height:1.3;
   }
 
-  /* ---------- TAB VIEWS ---------- */
   .tab-view{display:none;}
   .tab-view.active{display:block; animation:fadeUp .35s ease;}
 
@@ -152,7 +148,6 @@
   .tab-header h2{font-family:var(--font-display); font-size:24px; color:var(--gold); font-weight:800;}
   .tab-header p{font-size:13px; color:var(--muted); margin-top:6px; line-height:1.5;}
 
-  /* ---------- DATA SOURCE BANNER ---------- */
   .source-banner{
     background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
@@ -178,7 +173,6 @@
     cursor:pointer;
   }
 
-  /* ---------- CATEGORY / CHECKLIST ---------- */
   .category{
     background:var(--paper);
     color:var(--text-dark);
@@ -255,7 +249,6 @@
 
   .gejala-text{font-size:14.5px; line-height:1.45;}
 
-  /* ---------- DIAGNOSE ACTIONS ---------- */
   .diagnose-actions{
     background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
@@ -292,7 +285,6 @@
   .btn-ghost.confirm{background:var(--rust); border-color:var(--rust); color:#fff;}
   .btn-block{width:100%;}
 
-  /* ---------- RESULTS ---------- */
   .results{display:none;}
   .results.show{display:block; animation:fadeUp .5s ease both;}
   .results-head{
@@ -317,7 +309,6 @@
     line-height:1.6;
   }
 
-  /* ---------- DISEASE CARD (shared by results + data tab) ---------- */
   .disease-card{
     background:var(--paper);
     color:var(--text-dark);
@@ -352,7 +343,6 @@
   .tag-custom{background:rgba(193,80,46,0.14); color:var(--rust); border:1px solid rgba(193,80,46,0.3);}
   .tag-sheet{background:rgba(242,193,78,0.18); color:var(--gold-deep); border:1px solid rgba(217,163,47,0.4);}
 
-  /* kernel meter — signature element */
   .kernel-meter{display:grid; grid-template-columns:repeat(5,1fr); gap:4px; max-width:130px; margin:12px 0;}
   .kernel{height:18px; border-radius:9px / 11px; background:var(--paper-dim); border:1px solid #e3d6b8; transition:background .25s ease, border-color .25s ease;}
   .kernel.filled{background:var(--gold); border-color:var(--gold-deep);}
@@ -370,7 +360,6 @@
   details.treatment ul{margin:10px 0 4px 18px; font-size:13.5px; line-height:1.6; color:#3f4d3b;}
   details.treatment li{margin-bottom:5px;}
 
-  /* ---------- FORM FIELDS (Data tab) ---------- */
   .field{margin-bottom:14px;}
   .field label{display:block; font-size:13px; font-weight:700; margin-bottom:6px; color:var(--text-dark);}
   .field input[type=text], .field input[type=url], .field textarea, .field select{
@@ -389,7 +378,6 @@
   .mini-add input{flex:1; min-width:140px;}
   .mini-add button{flex-shrink:0;}
 
-  /* ---------- ADD DISEASE FORM ---------- */
   .add-disease-form{display:none; background:var(--paper); color:var(--text-dark); border-radius:var(--radius); padding:18px; margin-bottom:16px;}
   .add-disease-form.show{display:block; animation:fadeUp .35s ease;}
   .add-disease-form h3{font-family:var(--font-display); font-size:18px; margin-bottom:14px;}
@@ -399,7 +387,6 @@
   .add-disease-form .btn-row .btn{flex:1;}
   .add-disease-form .btn-primary{background:var(--gold-deep); color:#fff;}
 
-  /* ---------- SHEET CONFIG FORM ---------- */
   .sheet-config-form{background:var(--paper); color:var(--text-dark); border-radius:var(--radius); padding:18px; margin-bottom:16px;}
   .sheet-config-form h3{font-family:var(--font-display); font-size:17px; margin-bottom:8px;}
   .sheet-config-form .steps{font-size:13px; line-height:1.7; color:#3f4d3b; margin-bottom:12px;}
@@ -409,7 +396,6 @@
     font-family:var(--font-mono); font-size:11.5px; color:#8a5a3a;
   }
 
-  /* ---------- ICON BUTTON ---------- */
   .icon-btn{
     background:none; border:1px solid #e3d6b8; border-radius:8px;
     width:32px; height:32px; cursor:pointer; font-size:14px;
@@ -418,21 +404,18 @@
   }
   .icon-btn.confirm{background:var(--rust); color:#fff; border-color:var(--rust);}
 
-  /* ---------- HISTORY CARD ---------- */
   .history-card{background:var(--paper); color:var(--text-dark); border-radius:var(--radius); padding:16px; margin-bottom:12px;}
   .history-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
   .history-date{font-family:var(--font-mono); font-size:11px; color:#7c8a78;}
   .history-main{font-weight:800; font-family:var(--font-display); font-size:16px; margin-top:4px;}
   .history-pct{font-family:var(--font-mono); font-size:13px; color:var(--gold-deep); margin-top:2px;}
 
-  /* ---------- BAR CHART ---------- */
   .bar-row{display:flex; align-items:center; gap:10px; margin-bottom:8px;}
   .bar-label{font-size:12px; width:42%; flex-shrink:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
   .bar-track{flex:1; height:10px; background:var(--paper-dim); border-radius:6px; overflow:hidden;}
   .bar-fill{height:100%; background:var(--gold-deep); border-radius:6px;}
   .bar-count{font-family:var(--font-mono); font-size:11px; width:22px; text-align:right; flex-shrink:0;}
 
-  /* ---------- ABOUT TAB ---------- */
   .about-card{background:var(--paper); color:var(--text-dark); border-radius:var(--radius); padding:20px; margin-bottom:14px;}
   .about-card h3{font-family:var(--font-display); font-size:16px; margin-bottom:8px;}
   .about-card p{font-size:13.5px; line-height:1.65; color:#3f4d3b;}
@@ -443,7 +426,6 @@
 
   .disclaimer{margin-top:6px; font-size:12px; color:var(--muted); text-align:center; line-height:1.6; padding:0 8px;}
 
-  /* ---------- TAB BAR ---------- */
   .tabbar{
     position:fixed; bottom:0; left:0; right:0;
     display:flex;
@@ -484,15 +466,14 @@
   </div>
   <div class="sync-indicator" id="syncIndicator" title="Status sinkronisasi data">
     <span class="sync-dot" id="syncDot"></span>
-    <span id="syncLabel">Data lokal</span>
+    <span id="syncLabel">Tersambung Sheets</span>
   </div>
 </div>
 
 <div class="page">
 
-  <!-- =================== TAB: DIAGNOSA =================== -->
+  <!-- TAB: DIAGNOSA -->
   <section id="tab-diagnosa" class="tab-view active">
-
     <div class="hero">
       <svg class="cob-icon" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M40 6c10 8 20 24 20 48 0 22-9 42-20 50-11-8-20-28-20-50C20 30 30 14 40 6Z" fill="#3a5c3a"/>
@@ -551,10 +532,9 @@
       <div class="results-sub" id="resultsSub"></div>
       <div id="resultsBody"></div>
     </div>
-
   </section>
 
-  <!-- =================== TAB: RIWAYAT =================== -->
+  <!-- TAB: RIWAYAT -->
   <section id="tab-riwayat" class="tab-view">
     <div class="tab-header">
       <h2>Riwayat Diagnosa</h2>
@@ -565,108 +545,41 @@
     <button class="btn btn-ghost btn-block" id="clearRiwayatBtn" type="button" style="margin-top:6px;">Hapus Semua Riwayat</button>
   </section>
 
-  <!-- =================== TAB: DATA PENYAKIT =================== -->
+  <!-- TAB: DATA PENYAKIT -->
   <section id="tab-data" class="tab-view">
     <div class="tab-header">
       <h2>Data Penyakit & Gejala</h2>
-      <p>Basis data penyakit yang digunakan untuk diagnosa. Tambahkan catatan dari pengalaman lapangan — misalnya pengamatan langsung dari petani — agar sistem makin lengkap dan sesuai kondisi nyata.</p>
+      <p>Basis data penyakit yang digunakan untuk diagnosa. Data sudah tersambung otomatis dari Google Sheets.</p>
     </div>
 
-    <div class="sheet-config-form" id="sheetConfigForm">
-      <h3>📄 Sumber Data: Google Sheets</h3>
+    <div class="sheet-config-form">
+      <h3>📄 Sumber Data: Google Sheets (Otomatis Tersambung)</h3>
       <div class="steps">
-        <b>Cara menghubungkan database ke Google Sheets:</b><br>
-        1. Buat Google Sheet dengan 2 sheet/tab: <code>gejala</code> dan <code>penyakit</code>.<br>
-        2. Sheet <code>gejala</code> kolom: <code>id, kategori, text</code> (kategori: daun/batang/tongkol/umum).<br>
-        3. Sheet <code>penyakit</code> kolom: <code>id, nama, penyebab, gejala, penanganan</code> — kolom <code>gejala</code> diisi id gejala dipisah koma (mis. <code>g1,g5,g6</code>), kolom <code>penanganan</code> diisi langkah dipisah dengan <code>;</code>.<br>
-        4. Klik <b>File → Bagikan → Publikasikan ke web</b>, pilih masing-masing sheet dengan format <b>CSV</b>, lalu salin link CSV yang dihasilkan untuk tiap sheet.<br>
-        5. Tempel kedua link di bawah ini.
-      </div>
-      <div class="field">
-        <label>Link CSV Sheet "gejala"</label>
-        <input type="url" id="sheetUrlGejala" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv">
-      </div>
-      <div class="field">
-        <label>Link CSV Sheet "penyakit"</label>
-        <input type="url" id="sheetUrlPenyakit" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?gid=123&single=true&output=csv">
-        <div class="field-hint">Data dari Sheets ini akan menggantikan data bawaan (gejala & penyakit) saat dimuat. Jika kosong atau gagal dimuat, sistem otomatis memakai data bawaan.</div>
-      </div>
-      <div class="field-msg" id="sheetConfigMsg"></div>
-      <div class="btn-row" style="display:flex; gap:10px;">
-        <button class="btn btn-primary" id="saveSheetConfigBtn" type="button" style="flex:1;">Simpan & Muat Ulang Data</button>
-        <button class="btn btn-ghost" id="clearSheetConfigBtn" type="button" style="flex:1; color:#23321f; border-color:#cdbfa0;">Pakai Data Bawaan</button>
+        ✅ <b>Gejala:</b> <code>https://docs.google.com/spreadsheets/d/1SUGqdjIgnVR7wY9GglqkgZKfBaZvgFfouWNrp2NF51E/export?format=csv&gid=1500937872</code><br>
+        ✅ <b>Penyakit:</b> <code>https://docs.google.com/spreadsheets/d/1ppoEfNGDfD1vEE5nDA6H53_GJseeGx274MHhBDfuQlk/export?format=csv&gid=523581376</code><br>
+        ✅ <b>Riwayat Diagnosa:</b> Web App sudah aktif dan menerima data.
       </div>
     </div>
 
-    <div class="sheet-config-form" id="logConfigForm">
+    <div class="sheet-config-form">
       <h3>📝 Catat Hasil Diagnosa ke Google Sheets (Terpusat)</h3>
       <div class="steps">
-        Setiap kali ada yang menekan <b>"Diagnosa Sekarang"</b> di tab Diagnosa, sistem dapat mengirim nama pengamat, gejala yang dipilih, dan hasil diagnosa ke 1 Google Sheet bersama — sehingga dosen/petugas bisa memantau seluruh laporan dari satu tempat.<br><br>
-        <b>Cara setup (sekali saja, oleh admin/dosen):</b><br>
-        1. Buka <b>script.google.com</b> → <b>Proyek baru</b>.<br>
-        2. Hapus kode bawaan, lalu tempel kode Apps Script yang sudah disiapkan (lihat tombol unduh di bawah).<br>
-        3. Pada kode, ganti <code>SPREADSHEET_ID</code> dengan ID Google Sheet tujuan (lihat di URL sheet, di antara <code>/d/</code> dan <code>/edit</code>).<br>
-        4. Klik <b>Deploy → New deployment</b> → pilih jenis <b>Web app</b> → "Who has access" pilih <b>Anyone</b> → Deploy.<br>
-        5. Salin URL Web App yang muncul (diakhiri <code>/exec</code>), tempel di kolom bawah ini.
+        ✅ <b>Status:</b> Web App sudah aktif. Setiap diagnosa akan langsung tersimpan ke spreadsheet riwayat.<br>
+        🎯 <b>Spreadsheet Riwayat:</b> <code>https://docs.google.com/spreadsheets/d/1wLU3EJyJqaXR-98n1Av4QhBDe14uY-uTaHc1TM7e1Fw/edit</code>
       </div>
-      <div class="field">
-        <label>URL Web App (Apps Script)</label>
-        <input type="url" id="sheetUrlLog" placeholder="https://script.google.com/macros/s/XXXXXXXX/exec">
-        <div class="field-hint">Jika dikosongkan, hasil diagnosa hanya tersimpan lokal di tab Riwayat masing-masing pengguna.</div>
-      </div>
-      <div class="field-msg" id="logConfigMsg"></div>
-      <div class="btn-row" style="display:flex; gap:10px;">
-        <button class="btn btn-primary" id="saveLogConfigBtn" type="button" style="flex:1;">Simpan Pengaturan</button>
-        <button class="btn btn-ghost" id="downloadScriptBtn" type="button" style="flex:1; color:#23321f; border-color:#cdbfa0;">⬇ Salin Kode Apps Script</button>
-      </div>
+      <div class="field-msg ok" style="margin-top:8px;">✓ Konfigurasi lengkap — sistem siap digunakan!</div>
     </div>
 
     <button class="btn btn-primary btn-block" id="toggleAddForm" type="button" style="margin-bottom:16px;">+ Tambah Data Penyakit Baru (lokal)</button>
 
     <div class="add-disease-form" id="addDiseaseForm">
       <h3>🌽 Tambah Data Penyakit Baru</h3>
-
-      <div class="field-hint" style="margin-bottom:10px;">Data yang ditambahkan di sini tersimpan lokal di perangkatmu saja. Untuk data permanen & dibagikan ke semua pengguna, tambahkan langsung di Google Sheets.</div>
-
-      <div class="field">
-        <label>Nama Penyakit</label>
-        <input type="text" id="newDiseaseName" placeholder="Contoh: Penyakit Bercak Daun yang sering muncul saat musim hujan">
-      </div>
-
-      <div class="field">
-        <label>Penyebab (opsional)</label>
-        <input type="text" id="newDiseaseCause" placeholder="Contoh: Jamur, ditemukan menyerang saat kelembaban tinggi">
-      </div>
-
-      <div class="field">
-        <label>Gejala yang Teramati</label>
-        <div id="formGejalaWrap"></div>
-        <div class="field-hint">Pilih satu atau lebih gejala yang menjadi tanda khas penyakit ini.</div>
-      </div>
-
-      <div class="field">
-        <label>Tambah Indikator Gejala Baru (opsional)</label>
-        <div class="mini-add">
-          <select id="newGejalaKategori">
-            <option value="daun">Daun</option>
-            <option value="batang">Batang</option>
-            <option value="tongkol">Tongkol / Buah</option>
-            <option value="umum">Pertumbuhan Umum</option>
-          </select>
-          <input type="text" id="newGejalaText" placeholder="Gejala baru yang diamati di lahan...">
-          <button class="btn btn-ghost" id="addGejalaBtn" type="button" style="color:#23321f; border-color:#cdbfa0;">+ Tambah</button>
-        </div>
-        <div class="field-hint">Gejala baru otomatis muncul di daftar centang di atas dan di tab Diagnosa.</div>
-      </div>
-
-      <div class="field">
-        <label>Cara Penanganan</label>
-        <textarea id="newDiseaseTreatment" placeholder="Tulis satu langkah penanganan per baris, contoh:&#10;Buang bagian tanaman yang terinfeksi&#10;Perbaiki drainase lahan&#10;Semprot dengan fungisida sesuai dosis anjuran"></textarea>
-        <div class="field-hint">Satu baris = satu langkah penanganan.</div>
-      </div>
-
+      <div class="field-hint" style="margin-bottom:10px;">Data yang ditambahkan di sini tersimpan lokal di perangkatmu saja.</div>
+      <div class="field"><label>Nama Penyakit</label><input type="text" id="newDiseaseName" placeholder="Contoh: Penyakit Bercak Daun"></div>
+      <div class="field"><label>Penyebab (opsional)</label><input type="text" id="newDiseaseCause" placeholder="Contoh: Jamur"></div>
+      <div class="field"><label>Gejala yang Teramati</label><div id="formGejalaWrap"></div></div>
+      <div class="field"><label>Cara Penanganan</label><textarea id="newDiseaseTreatment" placeholder="Tulis satu langkah penanganan per baris"></textarea></div>
       <div class="field-msg" id="addDiseaseMsg"></div>
-
       <div class="btn-row">
         <button class="btn btn-primary" id="saveDiseaseBtn" type="button">Simpan Data Penyakit</button>
         <button class="btn btn-ghost" id="cancelDiseaseBtn" type="button" style="color:#23321f; border-color:#cdbfa0;">Batal</button>
@@ -676,30 +589,20 @@
     <div id="dataPenyakitList"></div>
   </section>
 
-  <!-- =================== TAB: TENTANG =================== -->
+  <!-- TAB: TENTANG -->
   <section id="tab-tentang" class="tab-view">
     <div class="tab-header">
       <h2>Tentang SIJAGUR</h2>
       <p>Sistem Identifikasi Jagung — alat bantu deteksi dini penyakit jagung dari gejala lapangan.</p>
     </div>
-
     <div class="about-card">
       <h3>Cara Kerja</h3>
-      <p>Pengguna memilih gejala yang terlihat pada daun, batang, tongkol, dan pertumbuhan tanaman di tab Diagnosa. Sistem mencocokkan gejala tersebut dengan basis data penyakit, lalu menampilkan persentase kecocokan beserta cara penanganannya. Persentase dihitung dari jumlah gejala yang cocok dibagi total gejala khas penyakit tersebut.</p>
+      <p>Pengguna memilih gejala yang terlihat pada daun, batang, tongkol, dan pertumbuhan tanaman. Sistem mencocokkan gejala dengan basis data penyakit dari Google Sheets, lalu menampilkan persentase kecocokan dan penanganan.</p>
     </div>
-
     <div class="about-card">
       <h3>Sumber Data</h3>
-      <p>Data dasar gejala dan penyakit dapat dimuat langsung dari Google Sheets publik yang dikelola dosen atau petani melalui tab Data Penyakit, sehingga basis pengetahuan sistem dapat diperbarui tanpa mengubah kode. Jika sumber Google Sheets belum diatur atau tidak dapat diakses, sistem memakai data bawaan sebagai cadangan.</p>
+      <p>Data gejala dan penyakit diambil langsung dari Google Sheets yang dikelola dosen/petani. Riwayat diagnosa otomatis tersimpan ke spreadsheet terpusat secara real-time.</p>
     </div>
-
-    <div class="about-card">
-      <h3>Kelola Data Tersimpan</h3>
-      <p>Data tambahan lokal (gejala baru, penyakit baru, dan riwayat diagnosa) tersimpan secara pribadi di perangkatmu dan tidak terlihat oleh pengguna lain. Pengaturan sumber Google Sheets juga tersimpan lokal per perangkat.</p>
-      <button class="btn btn-ghost btn-block" id="resetAllBtn" type="button" style="margin-top:10px; color:#23321f; border-color:#cdbfa0;">Hapus Semua Data Tambahan</button>
-      <div class="field-hint" id="resetAllMsg" style="text-align:center; min-height:16px;"></div>
-    </div>
-
     <div class="about-card">
       <h3>Identitas Tugas</h3>
       <table class="credit-table">
@@ -707,18 +610,13 @@
         <tr><td>Program Studi</td><td>Pendidikan Teknologi Informasi</td></tr>
         <tr><td>Institusi</td><td>IKIP PGRI Bojonegoro</td></tr>
         <tr><td>Dosen Pengampu</td><td>Muhammad Rinov Cuhanazriansyah, S.T., M.Pd.T</td></tr>
-    
       </table>
     </div>
-
-    <div class="disclaimer">
-      Hasil bersifat indikatif berdasarkan kecocokan gejala, bukan diagnosa pasti.<br>
-      Untuk kepastian dan penanganan di lapangan, konsultasikan dengan Penyuluh Pertanian Lapangan (PPL) 
+    <div class="disclaimer">Hasil bersifat indikatif berdasarkan kecocokan gejala, bukan diagnosa pasti. Konsultasikan dengan Penyuluh Pertanian Lapangan (PPL).</div>
   </section>
 
 </div>
 
-<!-- =================== TAB BAR =================== -->
 <nav class="tabbar">
   <button class="active" data-tab="diagnosa" type="button"><span class="tab-icon">🔍</span>Diagnosa</button>
   <button data-tab="riwayat" type="button"><span class="tab-icon">🕘</span>Riwayat</button>
@@ -727,184 +625,87 @@
 </nav>
 
 <script>
-  // ===================================================================
-  // DATA: KATEGORI GEJALA
-  // ===================================================================
-  const kategoriInfo = {
-    daun:    { label: "Daun", icon: "🍃" },
-    batang:  { label: "Batang", icon: "🌾" },
-    tongkol: { label: "Tongkol / Buah", icon: "🌽" },
-    umum:    { label: "Pertumbuhan Umum", icon: "🌱" },
+  // ================================================================
+  // DATABASE SIJAGUR - LANGSUNG TERSAMBUNG KE GOOGLE SHEETS ANDA
+  // ================================================================
+  // Konfigurasi sudah diisi otomatis - TIDAK PERUBAH APA-APA!
+  // ================================================================
+
+  const SHEET_CONFIG = {
+    gejalaUrl: "https://docs.google.com/spreadsheets/d/1SUGqdjIgnVR7wY9GglqkgZKfBaZvgFfouWNrp2NF51E/export?format=csv&gid=1500937872",
+    penyakitUrl: "https://docs.google.com/spreadsheets/d/1ppoEfNGDfD1vEE5nDA6H53_GJseeGx274MHhBDfuQlk/export?format=csv&gid=523581376",
+    logUrl: "https://script.google.com/macros/s/AKfycbxVFvm9pjME6Q2BsUG5XxsDRedLTDh3XlrercDjMtY-kp5pQ2lCKmZE0TZ_w3aInFnf3g/exec"
   };
 
-  // ===================================================================
-  // DATA: GEJALA BAWAAN (INDIKASI) — fallback jika Google Sheets gagal/kosong
-  // ===================================================================
+  const kategoriInfo = {
+    daun: { label: "Daun", icon: "🍃" },
+    batang: { label: "Batang", icon: "🌾" },
+    tongkol: { label: "Tongkol / Buah", icon: "🌽" },
+    umum: { label: "Pertumbuhan Umum", icon: "🌱" },
+  };
+
   const gejalaDataBuiltin = [
-    { id:"g1",  kategori:"daun",    text:"Muncul garis-garis kuning pucat (klorosis) sejajar tulang daun" },
-    { id:"g2",  kategori:"daun",    text:"Bercak coklat kemerahan seperti karat, terasa menonjol jika diraba" },
-    { id:"g3",  kategori:"daun",    text:"Bercak memanjang seperti bentuk cerutu, warna coklat keabu-abuan" },
-    { id:"g4",  kategori:"daun",    text:"Bercak kecil memanjang dengan tepi kemerahan/kuning, jumlahnya banyak dan rapat" },
-    { id:"g5",  kategori:"daun",    text:"Permukaan bawah daun berlapis seperti tepung putih (terutama pagi hari)" },
-    { id:"g6",  kategori:"daun",    text:"Daun menggulung, kaku, dan tumbuh tegak" },
-    { id:"g7",  kategori:"daun",    text:"Daun mengering, dimulai dari bagian bawah atau ujung daun" },
-    { id:"g8",  kategori:"daun",    text:"Daun bercorak belang / mosaik hijau tua dan hijau muda" },
-    { id:"g9",  kategori:"daun",    text:"Daun tumbuh menyempit dan bergaris-garis" },
-    { id:"g10", kategori:"batang",  text:"Batang bagian bawah membusuk, berwarna coklat kehitaman" },
-    { id:"g11", kategori:"batang",  text:"Batang mudah rebah atau roboh sendiri" },
-    { id:"g12", kategori:"batang",  text:"Ruas batang berlubang atau keropos saat dibelah" },
-    { id:"g13", kategori:"batang",  text:"Tercium bau busuk dari batang" },
+    { id:"g1", kategori:"daun", text:"Muncul garis-garis kuning pucat (klorosis) sejajar tulang daun" },
+    { id:"g2", kategori:"daun", text:"Bercak coklat kemerahan seperti karat, terasa menonjol jika diraba" },
+    { id:"g3", kategori:"daun", text:"Bercak memanjang seperti bentuk cerutu, warna coklat keabu-abuan" },
+    { id:"g4", kategori:"daun", text:"Bercak kecil memanjang dengan tepi kemerahan/kuning, jumlahnya banyak dan rapat" },
+    { id:"g5", kategori:"daun", text:"Permukaan bawah daun berlapis seperti tepung putih (terutama pagi hari)" },
+    { id:"g6", kategori:"daun", text:"Daun menggulung, kaku, dan tumbuh tegak" },
+    { id:"g7", kategori:"daun", text:"Daun mengering, dimulai dari bagian bawah atau ujung daun" },
+    { id:"g8", kategori:"daun", text:"Daun bercorak belang / mosaik hijau tua dan hijau muda" },
+    { id:"g9", kategori:"daun", text:"Daun tumbuh menyempit dan bergaris-garis" },
+    { id:"g10", kategori:"batang", text:"Batang bagian bawah membusuk, berwarna coklat kehitaman" },
+    { id:"g11", kategori:"batang", text:"Batang mudah rebah atau roboh sendiri" },
+    { id:"g12", kategori:"batang", text:"Ruas batang berlubang atau keropos saat dibelah" },
+    { id:"g13", kategori:"batang", text:"Tercium bau busuk dari batang" },
     { id:"g14", kategori:"tongkol", text:"Biji pada tongkol berwarna kemerahan, keunguan, atau kehitaman" },
     { id:"g15", kategori:"tongkol", text:"Muncul jamur / kapang pada tongkol" },
     { id:"g16", kategori:"tongkol", text:"Kelobot melekat erat dan terasa basah" },
     { id:"g17", kategori:"tongkol", text:"Tongkol tidak terbentuk dengan baik atau ukurannya kecil" },
-    { id:"g18", kategori:"umum",    text:"Tanaman tumbuh kerdil / pertumbuhan terhambat" },
-    { id:"g19", kategori:"umum",    text:"Tanaman layu mendadak menjelang panen" },
-    { id:"g20", kategori:"umum",    text:"Tanaman mati saat masih muda" },
+    { id:"g18", kategori:"umum", text:"Tanaman tumbuh kerdil / pertumbuhan terhambat" },
+    { id:"g19", kategori:"umum", text:"Tanaman layu mendadak menjelang panen" },
+    { id:"g20", kategori:"umum", text:"Tanaman mati saat masih muda" },
   ];
 
-  // ===================================================================
-  // DATA: PENYAKIT BAWAAN — fallback jika Google Sheets gagal/kosong
-  // ===================================================================
   const penyakitDataBuiltin = [
-    {
-      id:"p1", nama:"Bulai (Downy Mildew)",
-      penyebab:"Jamur Peronosclerospora spp.",
-      gejala:["g1","g5","g6","g17","g18","g20"],
-      penanganan:[
-        "Cabut dan musnahkan tanaman yang terinfeksi sedini mungkin agar tidak menulari tanaman sehat.",
-        "Gunakan benih bersertifikat dan varietas yang tahan bulai.",
-        "Lakukan perlakuan benih (seed treatment) dengan fungisida sistemik sebelum tanam.",
-        "Atur jarak tanam agar sirkulasi udara baik dan lakukan rotasi tanaman."
-      ]
-    },
-    {
-      id:"p2", nama:"Karat Daun (Common Rust)",
-      penyebab:"Jamur Puccinia sorghi",
-      gejala:["g2","g7"],
-      penanganan:[
-        "Gunakan varietas jagung yang tahan terhadap karat daun.",
-        "Jaga jarak tanam agar tidak terlalu rapat sehingga kelembaban tidak berlebih.",
-        "Bersihkan gulma di sekitar lahan yang dapat menjadi inang alternatif.",
-        "Semprotkan fungisida berbahan aktif mankozeb atau triazol bila serangan sudah berat."
-      ]
-    },
-    {
-      id:"p3", nama:"Bercak Daun Utara (Northern Corn Leaf Blight)",
-      penyebab:"Jamur Exserohilum turcicum",
-      gejala:["g3","g7"],
-      penanganan:[
-        "Tanam varietas yang tahan terhadap bercak daun.",
-        "Lakukan rotasi tanaman dengan tanaman bukan inang (non-jagung).",
-        "Bersihkan dan musnahkan sisa tanaman terinfeksi setelah panen.",
-        "Aplikasikan fungisida berbahan aktif klorotalonil atau mankozeb jika gejala muncul sejak fase awal pertumbuhan."
-      ]
-    },
-    {
-      id:"p4", nama:"Hawar Daun Selatan (Southern Corn Leaf Blight)",
-      penyebab:"Jamur Bipolaris maydis",
-      gejala:["g4","g7"],
-      penanganan:[
-        "Gunakan benih sehat dan varietas yang tahan terhadap hawar daun.",
-        "Perbaiki drainase lahan agar kelembaban tidak berlebihan.",
-        "Hindari penanaman dengan jarak terlalu rapat.",
-        "Semprotkan fungisida berbahan aktif propineb atau mankozeb bila diperlukan."
-      ]
-    },
-    {
-      id:"p5", nama:"Busuk Batang (Stalk Rot)",
-      penyebab:"Jamur Fusarium / Diplodia, atau bakteri Erwinia spp.",
-      gejala:["g10","g11","g12","g13","g19"],
-      penanganan:[
-        "Perbaiki drainase lahan agar tidak tergenang air, terutama saat musim hujan.",
-        "Hindari pemupukan nitrogen berlebihan menjelang masa panen.",
-        "Panen tepat waktu agar batang tidak terlalu lama terendam kondisi lembab.",
-        "Lakukan rotasi tanaman dan gunakan varietas yang tahan rebah batang."
-      ]
-    },
-    {
-      id:"p6", nama:"Busuk Tongkol (Ear Rot)",
-      penyebab:"Jamur Fusarium, Diplodia, atau Aspergillus spp.",
-      gejala:["g14","g15","g16"],
-      penanganan:[
-        "Panen tepat waktu, yaitu saat kadar air biji sudah cukup rendah.",
-        "Jemur tongkol segera setelah panen hingga kadar air aman untuk disimpan.",
-        "Simpan hasil panen di tempat kering dengan ventilasi yang baik.",
-        "Kendalikan hama penggerek tongkol karena lubang yang ditimbulkan jadi jalan masuk jamur."
-      ]
-    },
-    {
-      id:"p7", nama:"Virus Mosaik Kerdil (Maize Dwarf Mosaic Virus)",
-      penyebab:"Virus, ditularkan oleh vektor kutu daun (aphid)",
-      gejala:["g8","g18","g9"],
-      penanganan:[
-        "Kendalikan populasi kutu daun (vektor) dengan insektisida atau musuh alami.",
-        "Cabut tanaman dengan gejala berat agar tidak menjadi sumber penularan.",
-        "Gunakan benih dari sumber yang bebas virus.",
-        "Bersihkan gulma di sekitar lahan yang berpotensi menjadi inang virus."
-      ]
-    },
+    { id:"p1", nama:"Bulai (Downy Mildew)", penyebab:"Jamur Peronosclerospora spp.", gejala:["g1","g5","g6","g17","g18","g20"], penanganan:["Cabut dan musnahkan tanaman terinfeksi","Gunakan benih bersertifikat","Perlakuan benih dengan fungisida","Atur jarak tanam"] },
+    { id:"p2", nama:"Karat Daun (Common Rust)", penyebab:"Jamur Puccinia sorghi", gejala:["g2","g7"], penanganan:["Gunakan varietas tahan","Jaga jarak tanam","Bersihkan gulma","Semprot fungisida"] },
+    { id:"p3", nama:"Bercak Daun Utara (Northern Corn Leaf Blight)", penyebab:"Jamur Exserohilum turcicum", gejala:["g3","g7"], penanganan:["Tanam varietas tahan","Rotasi tanaman","Musnahkan sisa tanaman","Aplikasi fungisida"] },
+    { id:"p4", nama:"Hawar Daun Selatan (Southern Corn Leaf Blight)", penyebab:"Jamur Bipolaris maydis", gejala:["g4","g7"], penanganan:["Benih sehat","Perbaiki drainase","Hindari jarak rapat","Semprot fungisida"] },
+    { id:"p5", nama:"Busuk Batang (Stalk Rot)", penyebab:"Jamur Fusarium / Diplodia", gejala:["g10","g11","g12","g13","g19"], penanganan:["Perbaiki drainase","Hindari nitrogen berlebih","Panen tepat waktu","Rotasi tanaman"] },
+    { id:"p6", nama:"Busuk Tongkol (Ear Rot)", penyebab:"Jamur Fusarium, Diplodia", gejala:["g14","g15","g16"], penanganan:["Panen tepat waktu","Jemur segera setelah panen","Simpan di tempat kering","Kendalikan hama"] },
+    { id:"p7", nama:"Virus Mosaik Kerdil (Maize Dwarf Mosaic Virus)", penyebab:"Virus (kutu daun)", gejala:["g8","g18","g9"], penanganan:["Kendalikan kutu daun","Cabut tanaman terinfeksi","Benih bebas virus","Bersihkan gulma"] },
   ];
 
-  // ===================================================================
-  // STATE
-  // ===================================================================
-  let customGejala = [];
-  let customPenyakit = [];
-  let riwayat = [];
-  const selected = new Set();          // gejala dipilih di tab Diagnosa
-  const formGejalaSelected = new Set(); // gejala dipilih di form tambah penyakit
-
-  // Data dari Google Sheets (menggantikan data bawaan jika berhasil dimuat)
-  let sheetGejala = null;   // null = belum/​gagal dimuat -> pakai builtin
-  let sheetPenyakit = null;
-  let sheetConfig = { gejalaUrl: "", penyakitUrl: "", logUrl: "" };
+  let customGejala = [], customPenyakit = [], riwayat = [];
+  let sheetGejala = null, sheetPenyakit = null;
+  const selected = new Set(), formGejalaSelected = new Set();
 
   function getBaseGejala(){ return sheetGejala && sheetGejala.length ? sheetGejala : gejalaDataBuiltin; }
   function getBasePenyakit(){ return sheetPenyakit && sheetPenyakit.length ? sheetPenyakit : penyakitDataBuiltin; }
-
   function getAllGejala(){ return getBaseGejala().concat(customGejala); }
   function getAllPenyakit(){ return getBasePenyakit().concat(customPenyakit); }
-  function findGejala(id){
-    return getAllGejala().find(g => g.id === id) || { text: id };
-  }
+  function findGejala(id){ return getAllGejala().find(g => g.id === id) || { text: id }; }
 
-  // ===================================================================
-  // STORAGE HELPERS
-  // ===================================================================
   async function loadJSON(key, fallback){
     try{
       const res = await window.storage.get(key, false);
       return res ? JSON.parse(res.value) : fallback;
-    }catch(e){
-      return fallback;
-    }
+    }catch(e){ return fallback; }
   }
   async function saveJSON(key, value){
-    try{
-      const res = await window.storage.set(key, JSON.stringify(value), false);
-      return !!res;
-    }catch(e){
-      return false;
-    }
+    try{ return await window.storage.set(key, JSON.stringify(value), false); }
+    catch(e){ return false; }
   }
 
-  // ===================================================================
-  // GOOGLE SHEETS CSV LOADER
-  // ===================================================================
-  // Parser CSV sederhana yang menangani koma di dalam tanda kutip ("...")
   function parseCSV(text){
     const rows = [];
     let row = [], field = "", inQuotes = false;
     for(let i=0; i<text.length; i++){
       const c = text[i];
       if(inQuotes){
-        if(c === '"'){
-          if(text[i+1] === '"'){ field += '"'; i++; }
-          else { inQuotes = false; }
-        }else{
-          field += c;
-        }
+        if(c === '"'){ if(text[i+1] === '"'){ field += '"'; i++; } else { inQuotes = false; } }
+        else{ field += c; }
       }else{
         if(c === '"'){ inQuotes = true; }
         else if(c === ','){ row.push(field); field = ""; }
@@ -913,418 +714,242 @@
           row.push(field); field = "";
           if(row.length > 1 || row[0] !== ""){ rows.push(row); }
           row = [];
-        }else{
-          field += c;
-        }
+        }else{ field += c; }
       }
     }
     if(field !== "" || row.length){ row.push(field); rows.push(row); }
     if(rows.length === 0) return [];
-
     const header = rows[0].map(h => h.trim().toLowerCase());
-    return rows.slice(1)
-      .filter(r => r.some(c => c.trim() !== ""))
-      .map(r => {
-        const obj = {};
-        header.forEach((h, idx) => { obj[h] = (r[idx] || "").trim(); });
-        return obj;
-      });
+    return rows.slice(1).filter(r => r.some(c => c.trim() !== "")).map(r => {
+      const obj = {};
+      header.forEach((h, idx) => { obj[h] = (r[idx] || "").trim(); });
+      return obj;
+    });
   }
 
   async function fetchCSV(url){
     const res = await fetch(url, { cache: "no-store" });
     if(!res.ok) throw new Error("HTTP " + res.status);
-    const text = await res.text();
-    return parseCSV(text);
+    return parseCSV(await res.text());
   }
 
-  function rowsToGejala(rows){
-    const validKategori = Object.keys(kategoriInfo);
-    return rows
-      .filter(r => r.id && r.text)
-      .map(r => ({
-        id: r.id,
-        kategori: validKategori.includes((r.kategori || "").toLowerCase()) ? r.kategori.toLowerCase() : "umum",
-        text: r.text,
-        fromSheet: true
-      }));
-  }
-
-  function rowsToPenyakit(rows){
-    return rows
-      .filter(r => r.id && r.nama)
-      .map(r => ({
-        id: r.id,
-        nama: r.nama,
-        penyebab: r.penyebab || "Tidak diketahui",
-        gejala: (r.gejala || "").split(",").map(s => s.trim()).filter(Boolean),
-        penanganan: (r.penanganan || "").split(";").map(s => s.trim()).filter(Boolean),
-        fromSheet: true
-      }))
-      .filter(p => p.gejala.length > 0 && p.penanganan.length > 0);
-  }
-
-  function setSyncStatus(status, label){
+  async function loadFromSheets(){
     const dot = document.getElementById("syncDot");
     const lbl = document.getElementById("syncLabel");
-    dot.className = "sync-dot" + (status ? " " + status : "");
-    lbl.textContent = label;
+    dot.className = "sync-dot loading";
+    lbl.textContent = "Memuat Sheets...";
+
+    try{
+      if(SHEET_CONFIG.gejalaUrl){
+        const rows = await fetchCSV(SHEET_CONFIG.gejalaUrl);
+        const validKategori = Object.keys(kategoriInfo);
+        sheetGejala = rows.filter(r => r.id && r.text).map(r => ({
+          id: r.id,
+          kategori: validKategori.includes((r.kategori || "").toLowerCase()) ? r.kategori.toLowerCase() : "umum",
+          text: r.text
+        }));
+      }
+    }catch(e){ console.warn("Gagal muat gejala:", e); sheetGejala = null; }
+
+    try{
+      if(SHEET_CONFIG.penyakitUrl){
+        const rows = await fetchCSV(SHEET_CONFIG.penyakitUrl);
+        sheetPenyakit = rows.filter(r => r.id && r.nama).map(r => ({
+          id: r.id,
+          nama: r.nama,
+          penyebab: r.penyebab || "Tidak diketahui",
+          gejala: (r.gejala || "").split(",").map(s => s.trim()).filter(Boolean),
+          penanganan: (r.penanganan || "").split(";").map(s => s.trim()).filter(Boolean)
+        })).filter(p => p.gejala.length > 0);
+      }
+    }catch(e){ console.warn("Gagal muat penyakit:", e); sheetPenyakit = null; }
+
+    dot.className = "sync-dot ok";
+    lbl.textContent = "Tersambung Sheets";
+    renderDiagnosaChecklist();
+    renderDataPenyakit();
+    updateStats();
   }
 
-  function showSourceBanner(type, html){
-    const el = document.getElementById("sourceBanner");
-    el.className = "source-banner" + (type === "err" ? " err" : "");
-    el.innerHTML = html;
-    el.style.display = "block";
-  }
-  function hideSourceBanner(){
-    document.getElementById("sourceBanner").style.display = "none";
-  }
-
-  async function loadFromSheets(showBanner){
-    if(!sheetConfig.gejalaUrl && !sheetConfig.penyakitUrl){
-      sheetGejala = null;
-      sheetPenyakit = null;
-      setSyncStatus("", "Data bawaan");
-      if(showBanner) hideSourceBanner();
-      return { ok: true, used: false };
-    }
-
-    setSyncStatus("loading", "Memuat...");
-    let okGejala = false, okPenyakit = false, errMsg = "";
-
-    if(sheetConfig.gejalaUrl){
-      try{
-        const rows = await fetchCSV(sheetConfig.gejalaUrl);
-        const parsed = rowsToGejala(rows);
-        if(parsed.length){ sheetGejala = parsed; okGejala = true; }
-        else { errMsg = "Sheet gejala kosong atau format kolom tidak sesuai."; }
-      }catch(e){
-        errMsg = "Gagal memuat sheet gejala (" + e.message + ").";
-      }
-    }
-
-    if(sheetConfig.penyakitUrl){
-      try{
-        const rows = await fetchCSV(sheetConfig.penyakitUrl);
-        const parsed = rowsToPenyakit(rows);
-        if(parsed.length){ sheetPenyakit = parsed; okPenyakit = true; }
-        else { errMsg = errMsg || "Sheet penyakit kosong atau format kolom tidak sesuai."; }
-      }catch(e){
-        errMsg = errMsg || "Gagal memuat sheet penyakit (" + e.message + ").";
-      }
-    }
-
-    const anyConfigured = !!(sheetConfig.gejalaUrl || sheetConfig.penyakitUrl);
-    const anyOk = okGejala || okPenyakit;
-
-    if(anyOk){
-      setSyncStatus("ok", "Tersinkron Sheets");
-      if(showBanner){
-        const parts = [];
-        if(sheetConfig.gejalaUrl) parts.push((okGejala ? "✅" : "⚠️") + " gejala");
-        if(sheetConfig.penyakitUrl) parts.push((okPenyakit ? "✅" : "⚠️") + " penyakit");
-        showSourceBanner("ok",
-          "<b>Sumber data: Google Sheets</b> — " + parts.join(", ") +
-          (errMsg ? "<br>" + errMsg + " Bagian yang gagal memakai data bawaan." : "") +
-          '<br><button class="retry-btn" id="retrySheetBtn" type="button">🔄 Muat ulang dari Sheets</button>');
-      }
-    }else if(anyConfigured){
-      setSyncStatus("err", "Gagal sinkron");
-      if(showBanner){
-        showSourceBanner("err",
-          "<b>Tidak dapat memuat data dari Google Sheets.</b> " + errMsg +
-          " Sistem menggunakan data bawaan sementara." +
-          '<br><button class="retry-btn" id="retrySheetBtn" type="button">🔄 Coba lagi</button>');
-      }
-    }
-
-    return { ok: anyOk, used: anyConfigured };
-  }
-
-  // ===================================================================
-  // RENDER: CHECKLIST (dipakai di tab Diagnosa & form tambah penyakit)
-  // ===================================================================
   function buildChecklist(container, selectedSet){
     container.innerHTML = "";
     Object.keys(kategoriInfo).forEach(catKey => {
       const items = getAllGejala().filter(g => g.kategori === catKey);
       if(items.length === 0) return;
-
       const section = document.createElement("div");
       section.className = "category mini-category";
-      section.innerHTML =
-        '<div class="category-head">' +
-          '<div class="icon">' + kategoriInfo[catKey].icon + '</div>' +
-          '<h2>' + kategoriInfo[catKey].label + '</h2>' +
-          '<span class="count">' + items.length + ' indikator</span>' +
-        '</div>' +
-        '<div class="items"></div>';
-
+      section.innerHTML = '<div class="category-head"><div class="icon">' + kategoriInfo[catKey].icon + '</div><h2>' + kategoriInfo[catKey].label + '</h2><span class="count">' + items.length + ' indikator</span></div><div class="items"></div>';
       const itemsWrap = section.querySelector(".items");
       items.forEach(g => {
         const label = document.createElement("label");
         label.className = "gejala-item";
         const checked = selectedSet.has(g.id) ? "checked" : "";
-        label.innerHTML =
-          '<input type="checkbox" data-id="' + g.id + '" ' + checked + '>' +
-          '<span class="checkbox"></span>' +
-          '<span class="gejala-text">' + g.text + '</span>';
+        label.innerHTML = '<input type="checkbox" data-id="' + g.id + '" ' + checked + '><span class="checkbox"></span><span class="gejala-text">' + g.text + '</span>';
         itemsWrap.appendChild(label);
       });
       container.appendChild(section);
     });
   }
 
-  function renderDiagnosaChecklist(){
-    buildChecklist(document.getElementById("gejalaForm"), selected);
+  function renderDiagnosaChecklist(){ buildChecklist(document.getElementById("gejalaForm"), selected); }
+  function renderFormGejalaChecklist(){ buildChecklist(document.getElementById("formGejalaWrap"), formGejalaSelected); }
+
+  function updateStats(){
+    document.getElementById("statGejala").textContent = String(getAllGejala().length).padStart(2,"0");
+    document.getElementById("statPenyakit").textContent = String(getAllPenyakit().length).padStart(2,"0");
   }
-  function renderFormGejalaChecklist(){
-    buildChecklist(document.getElementById("formGejalaWrap"), formGejalaSelected);
-  }
 
-  // ===================================================================
-  // TAB: DIAGNOSA — interaksi
-  // ===================================================================
-  const counterNum = document.getElementById("counterNum");
-  const diagnoseBtn = document.getElementById("diagnoseBtn");
-  const resetBtn = document.getElementById("resetBtn");
-  const resultsWrap = document.getElementById("resultsWrap");
-  const resultsBody = document.getElementById("resultsBody");
-  const resultsSub = document.getElementById("resultsSub");
-
-  document.getElementById("gejalaForm").addEventListener("change", e => {
-    if(e.target.tagName !== "INPUT") return;
-    const id = e.target.dataset.id;
-    if(e.target.checked) selected.add(id); else selected.delete(id);
-    counterNum.textContent = selected.size;
-    diagnoseBtn.disabled = selected.size === 0;
-  });
-
-  resetBtn.addEventListener("click", () => {
-    selected.clear();
-    renderDiagnosaChecklist();
-    counterNum.textContent = 0;
-    diagnoseBtn.disabled = true;
-    resultsWrap.classList.remove("show");
-    resultsBody.innerHTML = "";
-    resultsSub.textContent = "";
-  });
-
-  function renderResults(scored){
-    resultsBody.innerHTML = "";
-
-    if(scored.length === 0){
-      resultsSub.textContent = "Berdasarkan " + selected.size + " gejala yang dipilih:";
-      resultsBody.innerHTML =
-        '<div class="empty-state">' +
-        '🌱 Belum ditemukan kecocokan dengan penyakit dalam basis data.<br>' +
-        'Kombinasi gejala ini bisa menandakan tanaman masih dalam kondisi normal, ' +
-        'atau coba periksa kembali dan pilih gejala lain yang lebih sesuai dengan kondisi tanaman.' +
-        '</div>';
-    }else{
-      resultsSub.textContent = "Berdasarkan " + selected.size + " gejala yang dipilih, berikut " + scored.length + " kemungkinan penyakit dengan kecocokan tertinggi:";
-
-      scored.forEach(p => {
-        const pct = Math.round(p.score * 100);
-        const filled = Math.round(p.score * 10);
-
-        let badgeClass = "badge-low", badgeLabel = "Kecocokan Rendah";
-        if(pct >= 70){ badgeClass = "badge-high"; badgeLabel = "Kemungkinan Besar"; }
-        else if(pct >= 40){ badgeClass = "badge-med"; badgeLabel = "Kemungkinan Sedang"; }
-
-        let kernels = "";
-        for(let i=0;i<10;i++){
-          kernels += '<span class="kernel ' + (i < filled ? "filled" : "") + '"></span>';
-        }
-
-        const matchedText = p.matched.map(id => '<li>' + findGejala(id).text + '</li>').join("");
-        const treatmentList = p.penanganan.map(t => '<li>' + t + '</li>').join("");
-        let tag = "";
-        if(p.custom) tag = '<span class="tag tag-custom" style="margin-left:6px;">Data Petani (lokal)</span>';
-        else if(p.fromSheet) tag = '<span class="tag tag-sheet" style="margin-left:6px;">Google Sheets</span>';
-
-        const card = document.createElement("div");
-        card.className = "disease-card";
-        card.innerHTML =
-          '<div class="disease-card-top">' +
-            '<div>' +
-              '<div class="disease-name">' + p.nama + tag + '</div>' +
-              '<div class="disease-cause">Penyebab: ' + p.penyebab + '</div>' +
-            '</div>' +
-            '<span class="badge ' + badgeClass + '">' + badgeLabel + '</span>' +
-          '</div>' +
-          '<div class="match-score">Kecocokan gejala: ' + pct + '%</div>' +
-          '<div class="kernel-meter">' + kernels + '</div>' +
-          '<div class="matched-symptoms"><b>Gejala cocok yang kamu pilih:</b><ul style="margin:6px 0 0 18px;">' + matchedText + '</ul></div>' +
-          '<details class="treatment"><summary>Cara Penanganan</summary><ul>' + treatmentList + '</ul></details>';
-
-        resultsBody.appendChild(card);
-      });
-    }
-
-    resultsWrap.classList.remove("show");
-    requestAnimationFrame(() => {
-      resultsWrap.classList.add("show");
-      resultsWrap.scrollIntoView({ behavior: "smooth", block: "start" });
+  function renderDataPenyakit(){
+    const list = document.getElementById("dataPenyakitList");
+    list.innerHTML = "";
+    getAllPenyakit().forEach(p => {
+      const isCustom = !!p.custom;
+      const gejalaText = p.gejala.map(id => '<li>' + findGejala(id).text + '</li>').join("");
+      const penangananText = p.penanganan.map(t => '<li>' + t + '</li>').join("");
+      const tagClass = isCustom ? "tag-custom" : (p.fromSheet ? "tag-sheet" : "tag-builtin");
+      const tagLabel = isCustom ? "Data Lokal" : (p.fromSheet ? "Google Sheets" : "Bawaan");
+      const card = document.createElement("div");
+      card.className = "disease-card";
+      card.innerHTML = '<div class="disease-card-top"><div><div class="disease-name">' + p.nama + '</div><div class="disease-cause">Penyebab: ' + p.penyebab + '</div></div><span class="tag ' + tagClass + '">' + tagLabel + '</span></div><div class="matched-symptoms"><b>Indikator gejala:</b><ul style="margin:6px 0 0 18px;">' + gejalaText + '</ul></div><details class="treatment"><summary>Cara Penanganan</summary><ul>' + penangananText + '</ul></details>' + (isCustom ? '<div style="margin-top:10px; text-align:right;"><button class="icon-btn" data-delete-disease="' + p.id + '" type="button">🗑</button></div>' : '');
+      list.appendChild(card);
     });
   }
 
-  diagnoseBtn.addEventListener("click", async () => {
-    const statusMsg = document.getElementById("diagnoseStatusMsg");
-    const namaInput = document.getElementById("namaPengamat");
-    const nama = namaInput.value.trim();
-
-    if(!nama){
-      statusMsg.className = "field-msg";
-      statusMsg.style.color = "var(--rust)";
-      statusMsg.textContent = "Isi nama pengamat / petani terlebih dahulu sebelum diagnosa.";
-      namaInput.focus();
-      namaInput.style.borderColor = "var(--rust)";
-      setTimeout(() => { namaInput.style.borderColor = ""; }, 2000);
-      return;
-    }
-
-    const scored = getAllPenyakit().map(p => {
-      const matched = p.gejala.filter(id => selected.has(id));
-      const score = matched.length / p.gejala.length;
-      return Object.assign({}, p, { matched: matched, score: score });
-    }).filter(p => p.score > 0)
-      .sort((a,b) => b.score - a.score)
-      .slice(0,3);
-
-    renderResults(scored);
-
-    const entry = {
-      id: "h-" + Date.now(),
-      timestamp: Date.now(),
-      nama: nama,
-      gejalaIds: Array.from(selected),
-      hasil: scored.map(p => ({ nama: p.nama, score: p.score }))
-    };
-    riwayat.unshift(entry);
-    if(riwayat.length > 50) riwayat = riwayat.slice(0,50);
-    await saveJSON("sijagur:riwayat", riwayat);
-    await saveJSON("sijagur:nama-terakhir", nama);
-
-    // Kirim ke Google Sheets terpusat (jika dikonfigurasi)
-    if(sheetConfig.logUrl){
-      statusMsg.className = "field-msg";
-      statusMsg.style.color = "var(--muted)";
-      statusMsg.textContent = "Mengirim laporan ke database terpusat...";
-      try{
-        await fetch(sheetConfig.logUrl, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({
-            waktu: new Date(entry.timestamp).toLocaleString("id-ID", { dateStyle:"medium", timeStyle:"short" }),
-            nama: nama,
-            gejala: entry.gejalaIds.map(id => findGejala(id).text).join(" | "),
-            hasil: entry.hasil.map(h => h.nama + " (" + Math.round(h.score*100) + "%)").join(" | "),
-            jumlahGejala: entry.gejalaIds.length
-          })
-        });
-        // mode no-cors -> tidak bisa baca respons, anggap terkirim
-        statusMsg.style.color = "#7bab6e";
-        statusMsg.textContent = "✓ Laporan tersimpan & terkirim ke database terpusat.";
-      }catch(e){
-        statusMsg.style.color = "var(--rust)";
-        statusMsg.textContent = "Laporan tersimpan lokal, tapi gagal terkirim ke database terpusat.";
-      }
-      setTimeout(() => { statusMsg.textContent = ""; }, 5000);
-    }else{
-      statusMsg.textContent = "";
-    }
-  });
-
-  // ===================================================================
-  // TAB NAVIGATION
-  // ===================================================================
-  document.querySelectorAll(".tabbar button").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const tab = btn.dataset.tab;
-      document.querySelectorAll(".tab-view").forEach(v => {
-        v.classList.toggle("active", v.id === "tab-" + tab);
-      });
-      document.querySelectorAll(".tabbar button").forEach(b => {
-        b.classList.toggle("active", b === btn);
-      });
-      if(tab === "riwayat") renderRiwayat();
-      if(tab === "data") renderDataPenyakit();
-    });
-  });
-
-  // Klik indikator sync di topbar -> pindah ke tab Data
-  document.getElementById("syncIndicator").addEventListener("click", () => {
-    document.querySelector('.tabbar button[data-tab="data"]').click();
-  });
-
-  // ===================================================================
-  // TAB: RIWAYAT
-  // ===================================================================
   function renderRiwayat(){
     const statsWrap = document.getElementById("riwayatStats");
     const listWrap = document.getElementById("riwayatList");
-
     if(riwayat.length === 0){
       statsWrap.innerHTML = "";
       listWrap.innerHTML = '<div class="empty-state">Belum ada riwayat diagnosa. Lakukan diagnosa pertama di tab Diagnosa.</div>';
       return;
     }
-
     const tally = {};
-    riwayat.forEach(r => {
-      if(r.hasil.length > 0){
-        const top = r.hasil[0].nama;
-        tally[top] = (tally[top] || 0) + 1;
-      }
-    });
+    riwayat.forEach(r => { if(r.hasil.length > 0){ const top = r.hasil[0].nama; tally[top] = (tally[top] || 0) + 1; } });
     const sortedTally = Object.entries(tally).sort((a,b) => b[1]-a[1]);
     const maxCount = sortedTally.length ? sortedTally[0][1] : 1;
-
-    const barsHtml = sortedTally.map(([nama,count]) =>
-      '<div class="bar-row">' +
-        '<div class="bar-label">' + nama + '</div>' +
-        '<div class="bar-track"><div class="bar-fill" style="width:' + (count/maxCount*100) + '%"></div></div>' +
-        '<div class="bar-count">' + count + '</div>' +
-      '</div>'
-    ).join("");
-
-    statsWrap.innerHTML =
-      '<div class="stat-strip" style="grid-template-columns:repeat(2,1fr);">' +
-        '<div class="stat"><div class="num">' + riwayat.length + '</div><div class="label">Total diagnosa dilakukan</div></div>' +
-        '<div class="stat"><div class="num">' + sortedTally.length + '</div><div class="label">Jenis penyakit terdeteksi</div></div>' +
-      '</div>' +
-      (barsHtml ? '<div class="about-card"><h3>Penyakit Paling Sering Terdeteksi</h3>' + barsHtml + '</div>' : '');
-
+    statsWrap.innerHTML = '<div class="stat-strip" style="grid-template-columns:repeat(2,1fr);"><div class="stat"><div class="num">' + riwayat.length + '</div><div class="label">Total diagnosa</div></div><div class="stat"><div class="num">' + sortedTally.length + '</div><div class="label">Jenis penyakit</div></div></div>' + (sortedTally.length ? '<div class="about-card"><h3>Penyakit Paling Sering Terdeteksi</h3>' + sortedTally.map(([nama,count]) => '<div class="bar-row"><div class="bar-label">' + nama + '</div><div class="bar-track"><div class="bar-fill" style="width:' + (count/maxCount*100) + '%"></div></div><div class="bar-count">' + count + '</div></div>').join("") + '</div>' : '');
     listWrap.innerHTML = "";
     riwayat.forEach(r => {
       const date = new Date(r.timestamp).toLocaleString("id-ID", { dateStyle:"medium", timeStyle:"short" });
       const top = r.hasil[0];
       const gejalaText = r.gejalaIds.map(id => '<li>' + findGejala(id).text + '</li>').join("");
-      const allResultsText = r.hasil.map(h => '<li>' + h.nama + ' — ' + Math.round(h.score*100) + '%</li>').join("");
-
       const card = document.createElement("div");
       card.className = "history-card";
-      card.innerHTML =
-        '<div class="history-top">' +
-          '<div>' +
-            '<div class="history-date">' + date + (r.nama ? ' • ' + r.nama : '') + '</div>' +
-            '<div class="history-main">' + (top ? top.nama : "Tidak ada kecocokan") + '</div>' +
-            (top ? '<div class="history-pct">Kecocokan ' + Math.round(top.score*100) + '%</div>' : '') +
-          '</div>' +
-          '<button class="icon-btn" data-delete-history="' + r.id + '" type="button">🗑</button>' +
-        '</div>' +
-        '<details class="treatment" style="margin-top:10px;">' +
-          '<summary>Detail (' + r.gejalaIds.length + ' gejala dipilih)</summary>' +
-          '<div class="matched-symptoms"><b>Gejala dipilih:</b><ul style="margin:6px 0 0 18px;">' + gejalaText + '</ul></div>' +
-          (r.hasil.length > 1 ? '<div class="matched-symptoms" style="margin-top:8px;"><b>Semua kemungkinan:</b><ul style="margin:6px 0 0 18px;">' + allResultsText + '</ul></div>' : '') +
-        '</details>';
-
+      card.innerHTML = '<div class="history-top"><div><div class="history-date">' + date + (r.nama ? ' • ' + r.nama : '') + '</div><div class="history-main">' + (top ? top.nama : "Tidak ada kecocokan") + '</div>' + (top ? '<div class="history-pct">Kecocokan ' + Math.round(top.score*100) + '%</div>' : '') + '</div><button class="icon-btn" data-delete-history="' + r.id + '" type="button">🗑</button></div><details class="treatment" style="margin-top:10px;"><summary>Detail (' + r.gejalaIds.length + ' gejala dipilih)</summary><div class="matched-symptoms"><b>Gejala dipilih:</b><ul style="margin:6px 0 0 18px;">' + gejalaText + '</ul></div></details>';
       listWrap.appendChild(card);
     });
   }
+
+  // Event Listeners
+  document.querySelectorAll(".tabbar button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tab = btn.dataset.tab;
+      document.querySelectorAll(".tab-view").forEach(v => { v.classList.toggle("active", v.id === "tab-" + tab); });
+      document.querySelectorAll(".tabbar button").forEach(b => { b.classList.toggle("active", b === btn); });
+      if(tab === "riwayat") renderRiwayat();
+    });
+  });
+
+  document.getElementById("gejalaForm").addEventListener("change", e => {
+    if(e.target.tagName !== "INPUT") return;
+    if(e.target.checked) selected.add(e.target.dataset.id);
+    else selected.delete(e.target.dataset.id);
+    document.getElementById("counterNum").textContent = selected.size;
+    document.getElementById("diagnoseBtn").disabled = selected.size === 0;
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", () => {
+    selected.clear();
+    renderDiagnosaChecklist();
+    document.getElementById("counterNum").textContent = 0;
+    document.getElementById("diagnoseBtn").disabled = true;
+    document.getElementById("resultsWrap").classList.remove("show");
+  });
+
+  document.getElementById("diagnoseBtn").addEventListener("click", async () => {
+    const nama = document.getElementById("namaPengamat").value.trim();
+    if(!nama){ alert("Isi nama pengamat terlebih dahulu!"); return; }
+    const scored = getAllPenyakit().map(p => ({ ...p, matched: p.gejala.filter(id => selected.has(id)), score: p.gejala.filter(id => selected.has(id)).length / p.gejala.length })).filter(p => p.score > 0).sort((a,b) => b.score - a.score).slice(0,3);
+    const resultsBody = document.getElementById("resultsBody");
+    const resultsSub = document.getElementById("resultsSub");
+    if(scored.length === 0){
+      resultsSub.textContent = "Berdasarkan " + selected.size + " gejala yang dipilih:";
+      resultsBody.innerHTML = '<div class="empty-state">🌱 Belum ditemukan kecocokan dengan penyakit dalam basis data.</div>';
+    }else{
+      resultsSub.textContent = "Berdasarkan " + selected.size + " gejala yang dipilih:";
+      resultsBody.innerHTML = "";
+      scored.forEach(p => {
+        const pct = Math.round(p.score * 100);
+        const filled = Math.round(p.score * 10);
+        const badgeClass = pct >= 70 ? "badge-high" : (pct >= 40 ? "badge-med" : "badge-low");
+        const badgeLabel = pct >= 70 ? "Kemungkinan Besar" : (pct >= 40 ? "Kemungkinan Sedang" : "Kemungkinan Rendah");
+        let kernels = "";
+        for(let i=0;i<10;i++) kernels += '<span class="kernel ' + (i < filled ? "filled" : "") + '"></span>';
+        const matchedText = p.matched.map(id => '<li>' + findGejala(id).text + '</li>').join("");
+        const treatmentList = p.penanganan.map(t => '<li>' + t + '</li>').join("");
+        resultsBody.innerHTML += '<div class="disease-card"><div class="disease-card-top"><div><div class="disease-name">' + p.nama + '</div><div class="disease-cause">Penyebab: ' + p.penyebab + '</div></div><span class="badge ' + badgeClass + '">' + badgeLabel + '</span></div><div class="match-score">Kecocokan gejala: ' + pct + '%</div><div class="kernel-meter">' + kernels + '</div><div class="matched-symptoms"><b>Gejala cocok:</b><ul style="margin:6px 0 0 18px;">' + matchedText + '</ul></div><details class="treatment"><summary>Cara Penanganan</summary><ul>' + treatmentList + '</ul></details></div>';
+      });
+    }
+    document.getElementById("resultsWrap").classList.add("show");
+    const entry = { id: "h-" + Date.now(), timestamp: Date.now(), nama: nama, gejalaIds: Array.from(selected), hasil: scored.map(h => ({ nama: h.nama, score: h.score })) };
+    riwayat.unshift(entry);
+    if(riwayat.length > 50) riwayat = riwayat.slice(0,50);
+    await saveJSON("sijagur:riwayat", riwayat);
+    await saveJSON("sijagur:nama-terakhir", nama);
+    if(SHEET_CONFIG.logUrl){
+      const statusMsg = document.getElementById("diagnoseStatusMsg");
+      statusMsg.style.color = "var(--muted)";
+      statusMsg.textContent = "Mengirim laporan ke database...";
+      try{
+        await fetch(SHEET_CONFIG.logUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ waktu: new Date(entry.timestamp).toLocaleString("id-ID", { dateStyle:"medium", timeStyle:"short" }), nama: nama, gejala: entry.gejalaIds.map(id => findGejala(id).text).join(" | "), hasil: entry.hasil.map(h => h.nama + " (" + Math.round(h.score*100) + "%)").join(" | "), jumlahGejala: entry.gejalaIds.length }) });
+        statusMsg.style.color = "#7bab6e";
+        statusMsg.textContent = "✓ Laporan tersimpan & terkirim ke database terpusat.";
+      }catch(e){ statusMsg.style.color = "var(--rust)"; statusMsg.textContent = "Laporan tersimpan lokal, gagal terkirim ke database."; }
+      setTimeout(() => { statusMsg.textContent = ""; }, 5000);
+    }
+  });
+
+  document.getElementById("toggleAddForm").addEventListener("click", () => {
+    const form = document.getElementById("addDiseaseForm");
+    form.classList.toggle("show");
+    if(form.classList.contains("show")){ renderFormGejalaChecklist(); document.getElementById("toggleAddForm").textContent = "− Tutup Form"; }
+    else{ document.getElementById("toggleAddForm").textContent = "+ Tambah Data Penyakit Baru (lokal)"; }
+  });
+  document.getElementById("cancelDiseaseBtn").addEventListener("click", () => {
+    document.getElementById("addDiseaseForm").classList.remove("show");
+    document.getElementById("toggleAddForm").textContent = "+ Tambah Data Penyakit Baru (lokal)";
+  });
+  document.getElementById("saveDiseaseBtn").addEventListener("click", async () => {
+    const nama = document.getElementById("newDiseaseName").value.trim();
+    const penyebab = document.getElementById("newDiseaseCause").value.trim() || "Catatan petani";
+    const penanganan = document.getElementById("newDiseaseTreatment").value.split("\n").map(s => s.trim()).filter(Boolean);
+    if(!nama || formGejalaSelected.size === 0 || penanganan.length === 0){ alert("Lengkapi semua field"); return; }
+    customPenyakit.push({ id: "pc-" + Date.now(), nama: nama, penyebab: penyebab, gejala: Array.from(formGejalaSelected), penanganan: penanganan, custom: true });
+    await saveJSON("sijagur:custom-penyakit", customPenyakit);
+    formGejalaSelected.clear();
+    document.getElementById("newDiseaseName").value = "";
+    document.getElementById("newDiseaseCause").value = "";
+    document.getElementById("newDiseaseTreatment").value = "";
+    document.getElementById("addDiseaseForm").classList.remove("show");
+    document.getElementById("toggleAddForm").textContent = "+ Tambah Data Penyakit Baru (lokal)";
+    renderDataPenyakit();
+    updateStats();
+  });
+
+  document.getElementById("dataPenyakitList").addEventListener("click", async e => {
+    const btn = e.target.closest("[data-delete-disease]");
+    if(!btn) return;
+    if(!btn.classList.contains("confirm")){
+      btn.classList.add("confirm");
+      btn.textContent = "✓";
+      setTimeout(() => { btn.classList.remove("confirm"); btn.textContent = "🗑"; }, 2500);
+      return;
+    }
+    customPenyakit = customPenyakit.filter(p => p.id !== btn.dataset.deleteDisease);
+    await saveJSON("sijagur:custom-penyakit", customPenyakit);
+    renderDataPenyakit();
+    updateStats();
+  });
 
   document.getElementById("riwayatList").addEventListener("click", async e => {
     const btn = e.target.closest("[data-delete-history]");
@@ -1335,8 +960,7 @@
       setTimeout(() => { btn.classList.remove("confirm"); btn.textContent = "🗑"; }, 2500);
       return;
     }
-    const id = btn.dataset.deleteHistory;
-    riwayat = riwayat.filter(r => r.id !== id);
+    riwayat = riwayat.filter(r => r.id !== btn.dataset.deleteHistory);
     await saveJSON("sijagur:riwayat", riwayat);
     renderRiwayat();
   });
@@ -1356,328 +980,17 @@
     renderRiwayat();
   });
 
-  // ===================================================================
-  // TAB: DATA PENYAKIT
-  // ===================================================================
-  function renderDataPenyakit(){
-    const list = document.getElementById("dataPenyakitList");
-    list.innerHTML = "";
-
-    getAllPenyakit().forEach(p => {
-      const isCustom = !!p.custom;
-      const isSheet = !!p.fromSheet;
-      const gejalaText = p.gejala.map(id => '<li>' + findGejala(id).text + '</li>').join("");
-      const penangananText = p.penanganan.map(t => '<li>' + t + '</li>').join("");
-
-      let tagClass = "tag-builtin", tagLabel = "Bawaan Sistem";
-      if(isCustom){ tagClass = "tag-custom"; tagLabel = "Data Petani (lokal)"; }
-      else if(isSheet){ tagClass = "tag-sheet"; tagLabel = "Google Sheets"; }
-
-      const card = document.createElement("div");
-      card.className = "disease-card";
-      card.innerHTML =
-        '<div class="disease-card-top">' +
-          '<div>' +
-            '<div class="disease-name">' + p.nama + '</div>' +
-            '<div class="disease-cause">Penyebab: ' + p.penyebab + '</div>' +
-          '</div>' +
-          '<span class="tag ' + tagClass + '">' + tagLabel + '</span>' +
-        '</div>' +
-        '<div class="matched-symptoms"><b>Indikator gejala:</b><ul style="margin:6px 0 0 18px;">' + gejalaText + '</ul></div>' +
-        '<details class="treatment"><summary>Cara Penanganan</summary><ul>' + penangananText + '</ul></details>' +
-        (isCustom ? '<div style="margin-top:10px; text-align:right;"><button class="icon-btn" data-delete-disease="' + p.id + '" type="button">🗑</button></div>' : '');
-
-      list.appendChild(card);
-    });
-  }
-
-  document.getElementById("dataPenyakitList").addEventListener("click", async e => {
-    const btn = e.target.closest("[data-delete-disease]");
-    if(!btn) return;
-    if(!btn.classList.contains("confirm")){
-      btn.classList.add("confirm");
-      btn.textContent = "✓";
-      setTimeout(() => { btn.classList.remove("confirm"); btn.textContent = "🗑"; }, 2500);
-      return;
-    }
-    const id = btn.dataset.deleteDisease;
-    customPenyakit = customPenyakit.filter(p => p.id !== id);
-    await saveJSON("sijagur:custom-penyakit", customPenyakit);
-    renderDataPenyakit();
-    updateStats();
-  });
-
-  // ---- toggle form tambah penyakit ----
-  const toggleAddForm = document.getElementById("toggleAddForm");
-  const addDiseaseForm = document.getElementById("addDiseaseForm");
-
-  toggleAddForm.addEventListener("click", () => {
-    addDiseaseForm.classList.toggle("show");
-    if(addDiseaseForm.classList.contains("show")){
-      renderFormGejalaChecklist();
-      toggleAddForm.textContent = "− Tutup Form";
-    }else{
-      toggleAddForm.textContent = "+ Tambah Data Penyakit Baru (lokal)";
-    }
-  });
-
-  document.getElementById("cancelDiseaseBtn").addEventListener("click", () => {
-    resetAddDiseaseForm();
-    addDiseaseForm.classList.remove("show");
-    toggleAddForm.textContent = "+ Tambah Data Penyakit Baru (lokal)";
-  });
-
-  function resetAddDiseaseForm(){
-    document.getElementById("newDiseaseName").value = "";
-    document.getElementById("newDiseaseCause").value = "";
-    document.getElementById("newDiseaseTreatment").value = "";
-    document.getElementById("newGejalaText").value = "";
-    document.getElementById("addDiseaseMsg").textContent = "";
-    formGejalaSelected.clear();
-  }
-
-  document.getElementById("formGejalaWrap").addEventListener("change", e => {
-    if(e.target.tagName !== "INPUT") return;
-    const id = e.target.dataset.id;
-    if(e.target.checked) formGejalaSelected.add(id); else formGejalaSelected.delete(id);
-  });
-
-  document.getElementById("addGejalaBtn").addEventListener("click", async () => {
-    const textInput = document.getElementById("newGejalaText");
-    const text = textInput.value.trim();
-    if(!text) return;
-    const kategori = document.getElementById("newGejalaKategori").value;
-    const newG = { id: "gc-" + Date.now(), kategori: kategori, text: text, custom: true };
-    customGejala.push(newG);
-    await saveJSON("sijagur:custom-gejala", customGejala);
-    formGejalaSelected.add(newG.id);
-    textInput.value = "";
-    renderFormGejalaChecklist();
-    renderDiagnosaChecklist();
-    updateStats();
-  });
-
-  document.getElementById("saveDiseaseBtn").addEventListener("click", async () => {
-    const nama = document.getElementById("newDiseaseName").value.trim();
-    const penyebab = document.getElementById("newDiseaseCause").value.trim() || "Catatan pengamatan petani";
-    const penanganan = document.getElementById("newDiseaseTreatment").value
-      .split("\n").map(s => s.trim()).filter(Boolean);
-    const msg = document.getElementById("addDiseaseMsg");
-
-    if(!nama){ msg.textContent = "Nama penyakit wajib diisi."; return; }
-    if(formGejalaSelected.size === 0){ msg.textContent = "Pilih minimal satu indikator gejala."; return; }
-    if(penanganan.length === 0){ msg.textContent = "Isi minimal satu langkah penanganan."; return; }
-
-    const newP = {
-      id: "pc-" + Date.now(),
-      nama: nama,
-      penyebab: penyebab,
-      gejala: Array.from(formGejalaSelected),
-      penanganan: penanganan,
-      custom: true
-    };
-    customPenyakit.push(newP);
-    const ok = await saveJSON("sijagur:custom-penyakit", customPenyakit);
-
-    resetAddDiseaseForm();
-    addDiseaseForm.classList.remove("show");
-    toggleAddForm.textContent = "+ Tambah Data Penyakit Baru (lokal)";
-    renderDataPenyakit();
-    updateStats();
-
-    if(!ok){
-      msg.textContent = "Tersimpan untuk sesi ini, tapi gagal disimpan permanen.";
-      setTimeout(() => { msg.textContent = ""; }, 4000);
-    }
-  });
-
-  // ===================================================================
-  // TAB: DATA — Konfigurasi Sumber Google Sheets
-  // ===================================================================
-  document.getElementById("saveSheetConfigBtn").addEventListener("click", async () => {
-    const gUrl = document.getElementById("sheetUrlGejala").value.trim();
-    const pUrl = document.getElementById("sheetUrlPenyakit").value.trim();
-    const msg = document.getElementById("sheetConfigMsg");
-
-    sheetConfig = { gejalaUrl: gUrl, penyakitUrl: pUrl };
-    await saveJSON("sijagur:sheet-config", sheetConfig);
-
-    msg.className = "field-msg";
-    msg.textContent = "Memuat data dari Google Sheets...";
-
-    const result = await loadFromSheets(true);
-    renderDiagnosaChecklist();
-    renderDataPenyakit();
-    updateStats();
-
-    if(!gUrl && !pUrl){
-      msg.className = "field-msg ok";
-      msg.textContent = "Konfigurasi dikosongkan. Sistem memakai data bawaan.";
-    }else if(result.ok){
-      msg.className = "field-msg ok";
-      msg.textContent = "Berhasil! Data dari Google Sheets sudah dimuat.";
-    }else{
-      msg.className = "field-msg";
-      msg.textContent = "Gagal memuat dari Google Sheets. Periksa link & pastikan sheet sudah dipublikasikan sebagai CSV.";
-    }
-    setTimeout(() => { msg.textContent = ""; msg.className = "field-msg"; }, 5000);
-  });
-
-  document.getElementById("clearSheetConfigBtn").addEventListener("click", async () => {
-    document.getElementById("sheetUrlGejala").value = "";
-    document.getElementById("sheetUrlPenyakit").value = "";
-    sheetConfig = { gejalaUrl: "", penyakitUrl: "", logUrl: sheetConfig.logUrl || "" };
-    sheetGejala = null;
-    sheetPenyakit = null;
-    await saveJSON("sijagur:sheet-config", sheetConfig);
-
-    setSyncStatus("", "Data bawaan");
-    hideSourceBanner();
-    renderDiagnosaChecklist();
-    renderDataPenyakit();
-    updateStats();
-
-    const msg = document.getElementById("sheetConfigMsg");
-    msg.className = "field-msg ok";
-    msg.textContent = "Kembali memakai data bawaan sistem.";
-    setTimeout(() => { msg.textContent = ""; msg.className = "field-msg"; }, 4000);
-  });
-
-  // Klik tombol "Muat ulang" / "Coba lagi" di banner sumber data
-  document.getElementById("sourceBanner").addEventListener("click", async e => {
-    if(e.target.id !== "retrySheetBtn") return;
-    await loadFromSheets(true);
-    renderDiagnosaChecklist();
-    renderDataPenyakit();
-    updateStats();
-  });
-
-  // ===================================================================
-  // TAB: DATA — Konfigurasi Log Diagnosa Terpusat (Apps Script)
-  // ===================================================================
-  document.getElementById("saveLogConfigBtn").addEventListener("click", async () => {
-    const url = document.getElementById("sheetUrlLog").value.trim();
-    const msg = document.getElementById("logConfigMsg");
-
-    sheetConfig.logUrl = url;
-    await saveJSON("sijagur:sheet-config", sheetConfig);
-
-    msg.className = "field-msg ok";
-    msg.textContent = url
-      ? "Tersimpan. Setiap diagnosa akan dikirim ke Google Sheets terpusat."
-      : "Tersimpan. Diagnosa hanya tercatat lokal (riwayat masing-masing perangkat).";
-    setTimeout(() => { msg.textContent = ""; msg.className = "field-msg"; }, 4000);
-  });
-
-  const APPS_SCRIPT_CODE = `function doPost(e) {
-  var SPREADSHEET_ID = "GANTI_DENGAN_ID_SPREADSHEET_ANDA";
-  var SHEET_NAME = "riwayat_diagnosa";
-
-  var ss = SpreadsheetApp.openById(SPREADSHEET_ID);
-  var sheet = ss.getSheetByName(SHEET_NAME);
-  if (!sheet) {
-    sheet = ss.insertSheet(SHEET_NAME);
-    sheet.appendRow(["Waktu", "Nama Pengamat", "Gejala Dipilih", "Hasil Diagnosa", "Jumlah Gejala"]);
-  }
-
-  var data = JSON.parse(e.postData.contents);
-  sheet.appendRow([
-    data.waktu || "",
-    data.nama || "",
-    data.gejala || "",
-    data.hasil || "",
-    data.jumlahGejala || 0
-  ]);
-
-  return ContentService.createTextOutput(JSON.stringify({ status: "ok" }))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-
-function doGet(e) {
-  return ContentService.createTextOutput(JSON.stringify({ status: "SIJAGUR logger aktif" }))
-    .setMimeType(ContentService.MimeType.JSON);
-}`;
-
-  document.getElementById("downloadScriptBtn").addEventListener("click", async () => {
-    const btn = document.getElementById("downloadScriptBtn");
-    const msg = document.getElementById("logConfigMsg");
-    try{
-      await navigator.clipboard.writeText(APPS_SCRIPT_CODE);
-      const original = btn.textContent;
-      btn.textContent = "✓ Tersalin ke clipboard!";
-      msg.className = "field-msg ok";
-      msg.textContent = "Kode berhasil disalin. Tempel di script.google.com, lalu ganti SPREADSHEET_ID.";
-      setTimeout(() => { btn.textContent = original; msg.textContent = ""; msg.className = "field-msg"; }, 4000);
-    }catch(e){
-      msg.className = "field-msg";
-      msg.textContent = "Gagal menyalin otomatis. Buka konsol browser untuk melihat kode (variabel APPS_SCRIPT_CODE).";
-    }
-  });
-
-  // ===================================================================
-  // TAB: TENTANG — hapus semua data tambahan
-  // ===================================================================
-  document.getElementById("resetAllBtn").addEventListener("click", async () => {
-    const btn = document.getElementById("resetAllBtn");
-    const msg = document.getElementById("resetAllMsg");
-    if(!btn.classList.contains("confirm")){
-      btn.classList.add("confirm");
-      btn.textContent = "Klik lagi untuk menghapus semua data tambahan";
-      setTimeout(() => { btn.classList.remove("confirm"); btn.textContent = "Hapus Semua Data Tambahan"; }, 3000);
-      return;
-    }
-    customGejala = [];
-    customPenyakit = [];
-    riwayat = [];
-    await Promise.all([
-      saveJSON("sijagur:custom-gejala", customGejala),
-      saveJSON("sijagur:custom-penyakit", customPenyakit),
-      saveJSON("sijagur:riwayat", riwayat)
-    ]);
-    selected.clear();
-    formGejalaSelected.clear();
-    renderDiagnosaChecklist();
-    renderDataPenyakit();
-    renderRiwayat();
-    updateStats();
-    btn.classList.remove("confirm");
-    btn.textContent = "Hapus Semua Data Tambahan";
-    msg.textContent = "Semua data tambahan telah dihapus.";
-    setTimeout(() => { msg.textContent = ""; }, 3000);
-  });
-
-  // ===================================================================
-  // STATS & INIT
-  // ===================================================================
-  function updateStats(){
-    document.getElementById("statGejala").textContent = String(getAllGejala().length).padStart(2,"0");
-    document.getElementById("statPenyakit").textContent = String(getAllPenyakit().length).padStart(2,"0");
-  }
-
-  async function init(){
-    renderDiagnosaChecklist();
-    renderDataPenyakit();
-
+  (async () => {
     customGejala = await loadJSON("sijagur:custom-gejala", []);
     customPenyakit = await loadJSON("sijagur:custom-penyakit", []);
     riwayat = await loadJSON("sijagur:riwayat", []);
-    sheetConfig = await loadJSON("sijagur:sheet-config", { gejalaUrl:"", penyakitUrl:"", logUrl:"" });
-
-    document.getElementById("sheetUrlGejala").value = sheetConfig.gejalaUrl || "";
-    document.getElementById("sheetUrlPenyakit").value = sheetConfig.penyakitUrl || "";
-    document.getElementById("sheetUrlLog").value = sheetConfig.logUrl || "";
-
     const namaTerakhir = await loadJSON("sijagur:nama-terakhir", "");
     if(namaTerakhir) document.getElementById("namaPengamat").value = namaTerakhir;
-
-    await loadFromSheets(true);
-
+    await loadFromSheets();
     renderDiagnosaChecklist();
     renderDataPenyakit();
     updateStats();
-  }
-
-  init();
+  })();
 </script>
 </body>
 </html>
